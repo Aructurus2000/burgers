@@ -1,10 +1,8 @@
-/* Общая настройка страницы*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Подключение шрифтов*/
 @font-face {
     font-family: 'Gilroy';
     src: url("../fonts/Gilroy-Semibold.ttf");
