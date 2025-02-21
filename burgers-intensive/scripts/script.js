@@ -46,7 +46,7 @@ document.getElementById("change-currency").onclick = function (e) {
     let newCurrency = "$";
     let coefficient = 1;
 
-    if(currentCurrency === "$") {
+    if (currentCurrency === "$") {
         newCurrency = "₽";
         coefficient = 80;
     } else if (currentCurrency === "₽") {
@@ -62,7 +62,7 @@ document.getElementById("change-currency").onclick = function (e) {
 
     e.target.innerText = newCurrency;
 
-    for (let i = 0; i < prices.length; i++){
+    for (let i = 0; i < prices.length; i++) {
         prices[i].innerText = +(prices[i].getAttribute("data-base-price") * coefficient).toFixed(1) + " " + newCurrency;
     }
 
